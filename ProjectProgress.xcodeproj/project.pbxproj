@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		037465C42B6D5EE300AED327 /* ProjectProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037465C32B6D5EE300AED327 /* ProjectProgressApp.swift */; };
-		037465C62B6D5EE300AED327 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037465C52B6D5EE300AED327 /* ContentView.swift */; };
 		037465C82B6D5EE400AED327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 037465C72B6D5EE400AED327 /* Assets.xcassets */; };
 		037465CB2B6D5EE400AED327 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 037465CA2B6D5EE400AED327 /* Preview Assets.xcassets */; };
+		037A1C402C889D460022DECD /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A1C3F2C889D460022DECD /* ProjectView.swift */; };
+		037A1C422C88A1080022DECD /* GlowingIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A1C412C88A1080022DECD /* GlowingIconView.swift */; };
+		037A1C442C88A11C0022DECD /* ProjectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A1C432C88A11C0022DECD /* ProjectButtonView.swift */; };
+		03A5A08D2C27808E0082E28F /* HomepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5A08C2C27808E0082E28F /* HomepageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		037465C02B6D5EE300AED327 /* ProjectProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		037465C32B6D5EE300AED327 /* ProjectProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectProgressApp.swift; sourceTree = "<group>"; };
-		037465C52B6D5EE300AED327 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		037465C72B6D5EE400AED327 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		037465CA2B6D5EE400AED327 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		037A1C3F2C889D460022DECD /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		037A1C412C88A1080022DECD /* GlowingIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowingIconView.swift; sourceTree = "<group>"; };
+		037A1C432C88A11C0022DECD /* ProjectButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectButtonView.swift; sourceTree = "<group>"; };
+		03A5A08C2C27808E0082E28F /* HomepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,7 @@
 		037465B72B6D5EE300AED327 = {
 			isa = PBXGroup;
 			children = (
+				037A1C3F2C889D460022DECD /* ProjectView.swift */,
 				037465C22B6D5EE300AED327 /* ProjectProgress */,
 				037465C12B6D5EE300AED327 /* Products */,
 			);
@@ -52,9 +59,11 @@
 			isa = PBXGroup;
 			children = (
 				037465C32B6D5EE300AED327 /* ProjectProgressApp.swift */,
-				037465C52B6D5EE300AED327 /* ContentView.swift */,
 				037465C72B6D5EE400AED327 /* Assets.xcassets */,
 				037465C92B6D5EE400AED327 /* Preview Content */,
+				03A5A08C2C27808E0082E28F /* HomepageView.swift */,
+				037A1C412C88A1080022DECD /* GlowingIconView.swift */,
+				037A1C432C88A11C0022DECD /* ProjectButtonView.swift */,
 			);
 			path = ProjectProgress;
 			sourceTree = "<group>";
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				037465C62B6D5EE300AED327 /* ContentView.swift in Sources */,
+				037A1C402C889D460022DECD /* ProjectView.swift in Sources */,
+				03A5A08D2C27808E0082E28F /* HomepageView.swift in Sources */,
 				037465C42B6D5EE300AED327 /* ProjectProgressApp.swift in Sources */,
+				037A1C422C88A1080022DECD /* GlowingIconView.swift in Sources */,
+				037A1C442C88A11C0022DECD /* ProjectButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +284,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectProgress/Preview Content\"";
+				DEVELOPMENT_TEAM = RD88BQC869;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectProgress/Preview Content\"";
+				DEVELOPMENT_TEAM = RD88BQC869;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

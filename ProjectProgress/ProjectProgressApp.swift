@@ -11,7 +11,8 @@ import SwiftUI
 struct ProjectProgressApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomepageView()
+                .preferredColorScheme(.dark)
         }
     }
 }
