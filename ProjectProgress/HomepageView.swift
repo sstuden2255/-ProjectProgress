@@ -19,8 +19,6 @@ struct HomepageView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     featuredSection
-                    categoriesSection
-                    recentItemsSection
                 }
                 .padding()
             }
@@ -30,69 +28,18 @@ struct HomepageView: View {
     }
     
     var featuredSection: some View {
-            VStack(alignment: .leading) {
-                Text("My Projects")
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 15) {
-                        ForEach(0..<5) { item in
-                            ProjectButtonView(iconName: "chevron.left.slash.chevron.right")
-                        }
-                    }
-                    .padding(.vertical, 10)
-                }
-            }
-        }
-        
-        var categoriesSection: some View {
-            VStack(alignment: .leading) {
-                Text("Categories")
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                LazyVGrid(columns: [GridItem(), GridItem()]) {
-                    ForEach(0..<6) { item in
-                        VStack {
-                            Circle()
-                                .fill(Color.aquamarine)
-                                .frame(width: 80, height: 80)
-                            Text("Category \(item + 1)")
-                                .font(.subheadline)
-                                .foregroundColor(.white)
-                        }
-                        .padding()
+        VStack(alignment: .leading) {
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 15) {
+                    ForEach(0..<5) { item in
+                        ProjectButtonView(iconName: "chevron.left.slash.chevron.right")
                     }
                 }
                 .padding(.vertical, 10)
             }
         }
-        
-        var recentItemsSection: some View {
-            VStack(alignment: .leading) {
-                Text("Recent Items")
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                ForEach(0..<10) { item in
-                    HStack {
-                        Rectangle()
-                            .fill(Color.aquamarine.opacity(0.7))
-                            .frame(width: 50, height: 50)
-                            .cornerRadius(5)
-                            .shadow(color: .aquamarine, radius: 2)
-                        VStack(alignment: .leading) {
-                            Text("Item \(item + 1)")
-                                .font(.headline)
-                                .foregroundColor(.white)
-                            Text("Description of item \(item + 1)")
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
-                        }
-                        Spacer()
-                    }
-                    .padding(.vertical, 5)
-                }
-            }
-        }}
+    }
+}
 
 #Preview {
     HomepageView()

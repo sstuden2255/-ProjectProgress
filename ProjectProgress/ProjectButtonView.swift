@@ -15,17 +15,18 @@ struct ProjectButtonView: View {
             ZStack {
                 RoundedRectangle(cornerRadius: 20)
                     .fill(.ultraThinMaterial)
-                    .frame(width: 210, height: 160)
+                    .padding()
+                    .frame(maxWidth: .infinity, minHeight: 200, maxHeight: 200)
                 
                 RoundedRectangle(cornerRadius: 15)
                     .fill(
                         LinearGradient(
-                            gradient: Gradient(colors: [Color.aquamarine.opacity(0.9), Color.aquamarine.opacity(0.7)]),
-                            startPoint: .topLeading,
+                            gradient: Gradient(colors: [Color.aquamarine.opacity(0.7), Color.aquamarine.opacity(0.5)]),
+                            startPoint: .top,
                             endPoint: .bottomTrailing
                         )
                     )
-                    .frame(width: 190, height: 140)
+                    .frame(maxWidth: .infinity, minHeight: 200, maxHeight: 200)
                     .overlay(
                         GlowingIconView(iconName: iconName, iconColor: .white, shadowColor: .white)
                     )
