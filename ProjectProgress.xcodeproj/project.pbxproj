@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0335FAE62CDAC52B0043A89E /* OnboardingViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0335FAE52CDAC52B0043A89E /* OnboardingViews.swift */; };
+		0335FAE82CDAC62D0043A89E /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0335FAE72CDAC62D0043A89E /* OnboardingManager.swift */; };
+		0335FAEA2CDAC7240043A89E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0335FAE92CDAC7240043A89E /* ContentView.swift */; };
 		037465C42B6D5EE300AED327 /* ProjectProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037465C32B6D5EE300AED327 /* ProjectProgressApp.swift */; };
 		037465C82B6D5EE400AED327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 037465C72B6D5EE400AED327 /* Assets.xcassets */; };
 		037465CB2B6D5EE400AED327 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 037465CA2B6D5EE400AED327 /* Preview Assets.xcassets */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0335FAE52CDAC52B0043A89E /* OnboardingViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViews.swift; sourceTree = "<group>"; };
+		0335FAE72CDAC62D0043A89E /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
+		0335FAE92CDAC7240043A89E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		037465C02B6D5EE300AED327 /* ProjectProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		037465C32B6D5EE300AED327 /* ProjectProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectProgressApp.swift; sourceTree = "<group>"; };
 		037465C72B6D5EE400AED327 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,9 +65,12 @@
 			isa = PBXGroup;
 			children = (
 				037465C32B6D5EE300AED327 /* ProjectProgressApp.swift */,
+				0335FAE92CDAC7240043A89E /* ContentView.swift */,
 				037465C72B6D5EE400AED327 /* Assets.xcassets */,
 				037465C92B6D5EE400AED327 /* Preview Content */,
 				03A5A08C2C27808E0082E28F /* HomepageView.swift */,
+				0335FAE52CDAC52B0043A89E /* OnboardingViews.swift */,
+				0335FAE72CDAC62D0043A89E /* OnboardingManager.swift */,
 				037A1C412C88A1080022DECD /* GlowingIconView.swift */,
 				037A1C432C88A11C0022DECD /* ProjectButtonView.swift */,
 			);
@@ -147,6 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				037A1C402C889D460022DECD /* ProjectView.swift in Sources */,
+				0335FAE62CDAC52B0043A89E /* OnboardingViews.swift in Sources */,
+				0335FAEA2CDAC7240043A89E /* ContentView.swift in Sources */,
+				0335FAE82CDAC62D0043A89E /* OnboardingManager.swift in Sources */,
 				03A5A08D2C27808E0082E28F /* HomepageView.swift in Sources */,
 				037465C42B6D5EE300AED327 /* ProjectProgressApp.swift in Sources */,
 				037A1C422C88A1080022DECD /* GlowingIconView.swift in Sources */,
